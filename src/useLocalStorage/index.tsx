@@ -1,0 +1,23 @@
+import * as React from 'react'
+
+const { useState } = React
+
+function useLocalStorage(key: string, initialValue?: any) {
+  const [value, setValue] = useState(() => {
+    try {
+      const cacheValue = window.localStorage.getItem(key)
+      return cacheValue ? JSON.parse(cacheValue) : initialValue
+    } catch(error) {
+      return initialValue
+    }
+  })
+
+  const setItem = (value: any) => {
+    setValue(value)
+    window.localStorage.setItem(key, JSON.stringify(value))
+  }
+
+  return [value, setItem]
+}
+
+export default useLocalStorage
