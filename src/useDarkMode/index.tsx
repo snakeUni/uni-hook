@@ -2,11 +2,18 @@ import * as React from 'react'
 
 const { useState, useEffect } = React
 
+interface Result {
+  value: boolean,
+  enable: () => void
+  disable: () => void
+  toggle: () => void
+}
+
 // Hook
 const className = 'dark-mode';
 const element = document.body;
 
-function useDarkMode(initialValue = false){
+function useDarkMode(initialValue = false): Result {
   // Enabled state for dark mode
   const [value, setDarkMode] = useState(initialValue);
 

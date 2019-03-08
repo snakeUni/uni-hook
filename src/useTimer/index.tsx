@@ -7,7 +7,7 @@ interface TimerProps {
   // 结束时间
   endTime: number
   // 精确时间 默认为1000毫秒
-  timeGap: number
+  timeGap?: number
 }
 
 const { useState } = React

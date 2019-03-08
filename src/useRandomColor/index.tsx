@@ -2,7 +2,9 @@ import * as React from 'react'
 
 const { useState } = React
 
-function useRandomColor(colors: Array<string>, initialColor: string) {
+type Fun = () => void
+
+function useRandomColor(colors: Array<string>, initialColor: string): [string, Fun] {
   const lenColors = colors.length;
   const [color, setColor] = useState(initialColor);
 

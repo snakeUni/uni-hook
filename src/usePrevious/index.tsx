@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const { useRef, useEffect } = React
 
-function usePrevious(value: any) {
+function usePrevious<T>(value: T): T {
   // 可以在ref.current挂载任何的值，这个类似于class instance
   const previousValue = useRef(value)
 
