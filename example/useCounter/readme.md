@@ -3,11 +3,15 @@
 主要用于加减计算
 
 ## Usage
+
 引入hook
+
 ```jsx
 import { useCounter } from 'uni-hook'
 ```
+
 ## demo 代码
+
 ```jsx
 export default function CounterDemo() {
   const [count, { increment, incrementBy, decrement, decrementBy }] = useCounter(0)
@@ -24,8 +28,11 @@ export default function CounterDemo() {
 ```
 
 ## Api
+
 > useCounter(initialValue: number) : [number, Method]
+
 ### Method
+
 | 属性   |      说明     |  类型 | 默认值 |
 |----------|:-------------:|:------:| ------: |
 | increment | 增加函数, 每次加`1` | function |

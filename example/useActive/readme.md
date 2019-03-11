@@ -1,11 +1,17 @@
 # useActive
+
 用于鼠标点击激活
+
 ## Usage
+
 引入hook
+
 ```jsx
 import { useActive } from 'uni-hook'
 ```
+
 ## Demo 代码
+
 ```jsx
 export default function ActiveDemo() {
   const [active, { onMouseDown, onMouseUp }] = useActive()
@@ -29,9 +35,11 @@ export default function ActiveDemo() {
 ```
 
 ## Api
+
 > useActive() : [boolean, Method]
 
-#### Method
+### Method
+
 | 属性   |      说明     |  类型 | 默认值 |
 |----------|:-------------:|:------:| ------: |
 | onMouseDown | 用于激活 | function | -- |

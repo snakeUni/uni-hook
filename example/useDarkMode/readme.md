@@ -1,12 +1,17 @@
 # useDarkMode
+
 用于随时改变主题
+
 ## Usage
+
 引入组件
+
 ```jsx
 import { useDarkMode } from 'uni-hook'
 ```
 
 ## Demo 代码
+
 ```jsx
 export default function DarkDemo() {
   const { enable, disable, toggle } = useDarkMode(false)
@@ -21,9 +26,11 @@ export default function DarkDemo() {
 ```
 
 ## Api
+
 > useDarkMode(initialValue) : Result  `initialValue`初始为`false`
 
 ### Result
+
 | 属性   |      说明     |  类型 | 默认值 |
 |----------|:-------------:|:------:| ------: |
 | value | 返回的值 | boolean | false |

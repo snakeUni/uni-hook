@@ -1,13 +1,17 @@
 # useDelay
+
 用于延迟执行某些事物
 
 ## Usage
+
 引入组件
+
 ```jsx
 import { useDelay } from 'uni-hook'
 ```
 
 ## Demo 代码
+
 ```jsx
 export default function DelayDemo() {
   const [delay, setDelay] = React.useState(3000)
@@ -25,4 +29,5 @@ export default function DelayDemo() {
 ```
 
 ## Api
+
 > useDelay(callback, delay)

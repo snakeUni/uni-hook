@@ -3,7 +3,7 @@ import * as React from 'react'
 interface ScreenProps {
   // ref 当前的ref
   ref: React.RefObject<any>
-  rootMargin: string
+  rootMargin?: string
 }
 
 const { useState, useEffect } = React
