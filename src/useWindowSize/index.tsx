@@ -2,7 +2,12 @@ import * as React from 'react'
 
 const { useEffect, useState } = React
 
-function useWindowSize() {
+interface UseWindow {
+  width?: number
+  height?: number
+}
+
+function useWindowSize() : UseWindow {
   const isBrowser = typeof window === 'object'
 
   const getSize = () => {

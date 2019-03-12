@@ -10,9 +10,17 @@ interface TimerProps {
   timeGap?: number
 }
 
+interface Result {
+  day: number
+  hour: number
+  minute: number
+  second: number
+  millisecond: number
+}
+
 const { useState } = React
 
-function useTimer({ startTime, endTime, timeGap = 1000 }: TimerProps) {
+function useTimer({ startTime, endTime, timeGap = 1000 }: TimerProps) : [Result] {
   const duration = endTime - startTime
   const [remainTime, setRemainTime] = useState(duration)
 
