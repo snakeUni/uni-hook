@@ -53,6 +53,9 @@ import ToggleReadme from '../example/useToggle/readme.md'
 import WindowSizeDemo from '../example/useWindowSize'
 import WindowSizeReadme from '../example/useWindowSize/readme.md'
 
+import SessionDemo from '../example/useSessionStorage'
+import SessionReadme from '../example/useSessionStorage/readme.md'
+
 storiesOf('Hook', module)
 .add('useCounter', withDocs(CounterReadme, () => {
   return <CounterDemo />
@@ -104,4 +107,7 @@ storiesOf('Hook', module)
 }))
 .add('useWindowSize', withDocs(WindowSizeReadme, () => {
   return <WindowSizeDemo />
+}))
+.add('useSessionStorage', withDocs(SessionReadme, () => {
+  return <SessionDemo />
 }))

@@ -2,7 +2,9 @@ import * as React from 'react'
 
 const { useState } = React
 
-function useSessionStorage(key: string, initialValue?: any) {
+type Session = (value: any) => void
+
+function useSessionStorage(key: string, initialValue?: any) : [any, Session] {
   const [value, setValue] = useState(() => {
     try {
       const cacheValue = window.sessionStorage.getItem(key)
@@ -12,12 +14,12 @@ function useSessionStorage(key: string, initialValue?: any) {
     }
   })
 
-  const setItem = (value: any) => {
+  const setSession = (value: any) => {
     setValue(value)
     window.sessionStorage.setItem(key, JSON.stringify(value))
   }
 
-  return [value, setItem]
+  return [value, setSession]
 }
 
 export default useSessionStorage
