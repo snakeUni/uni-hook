@@ -11,8 +11,15 @@
     "noUnusedLocals": true,
     "target": "es5",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "outDir": "lib",
   },
-  "exclude": ["node_modules", "lib", "es"],
+  "exclude": [
+    "node_modules", 
+    "lib", 
+    "es",  
+    "**/__tests__/**/*",
+    "**/__stories__/**/*"
+  ],
   "include": ["src"]
 }
