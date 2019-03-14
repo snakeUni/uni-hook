@@ -56,6 +56,24 @@ import WindowSizeReadme from '../example/useWindowSize/readme.md'
 import SessionDemo from '../example/useSessionStorage'
 import SessionReadme from '../example/useSessionStorage/readme.md'
 
+import PromiseDemo from '../example/usePromise'
+import PromiseReadme from '../example/usePromise/readme.md'
+
+import DidMountDemo from '../example/useDidMount'
+import DidMountReadme from '../example/useDidMount/readme.md'
+
+import HoverDemo from '../example/useHover'
+import HoverReadme from '../example/useHover/readme.md'
+
+import TouchDemo from '../example/useTouch'
+import TouchReadme from '../example/useTouch/readme.md'
+
+import UndoDemo from '../example/useUndo'
+import UndoReadme from '../example/useUndo/readme.md'
+
+import LocalStorageDemo from '../example/useLocalStorage'
+import LocalStorageReadme from '../example/useLocalStorage/readme.md'
+
 storiesOf('Hook', module)
 .add('useCounter', withDocs(CounterReadme, () => {
   return <CounterDemo />
@@ -110,4 +128,22 @@ storiesOf('Hook', module)
 }))
 .add('useSessionStorage', withDocs(SessionReadme, () => {
   return <SessionDemo />
+}))
+.add('useLocalStorage', withDocs(LocalStorageReadme, () => {
+  return <LocalStorageDemo />
+}))
+.add('usePromise', withDocs(PromiseReadme, () => {
+  return <PromiseDemo />
+}))
+.add('useDidMount', withDocs(DidMountReadme, () => {
+  return <DidMountDemo />
+}))
+.add('useHover', withDocs(HoverReadme, () => {
+  return <HoverDemo />
+}))
+.add('useTouch', withDocs(TouchReadme, () => {
+  return <TouchDemo />
+}))
+.add('useUndo', withDocs(UndoReadme, () => {
+  return <UndoDemo />
 }))

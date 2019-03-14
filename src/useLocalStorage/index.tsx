@@ -2,7 +2,12 @@ import * as React from 'react'
 
 const { useState } = React
 
-function useLocalStorage(key: string, initialValue?: any) {
+interface Storage {
+  setItem: (value: string) => void
+  removeItem: () => void
+}
+
+function useLocalStorage(key: string, initialValue?: any): [any, Storage] {
   const [value, setValue] = useState(() => {
     try {
       const cacheValue = window.localStorage.getItem(key)
@@ -17,7 +22,12 @@ function useLocalStorage(key: string, initialValue?: any) {
     window.localStorage.setItem(key, JSON.stringify(value))
   }
 
-  return [value, setItem]
+  const removeItem = () => {
+    setValue(undefined)
+    window.localStorage.removeItem(key)
+  }
+
+  return [value, { setItem, removeItem }]
 }
 
 export default useLocalStorage
