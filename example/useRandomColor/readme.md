@@ -22,7 +22,7 @@ export default function RandomColorDemo() {
       <div>
         <Button onClick={changeColor}>点击随机改变颜色</Button>
       </div>
-      <p>当前选中的彩虹色: <span style={{ color: `${selectedColor}` }}>{selectedColor}</span></p>
+      <p>当前选中的彩虹色: <span style={{ color: selectedColor }}>{selectedColor}</span></p>
       {colors.map(c => {
         const style: React.CSSProperties = {}
         style.background = c
