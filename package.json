@@ -1,5 +1,5 @@
 {
-  "name": "customhook",
+  "name": "uni-hook",
   "version": "1.0.0",
   "description": "custom-hook",
   "main": "lib/index.js",
