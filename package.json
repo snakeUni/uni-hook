@@ -7,6 +7,9 @@
     "test": "jest --config jest.config.js --verbose",
     "dev": "start-storybook -p 9001 -c .storybook",
     "build": "tsc",
+    "clean": "rimraf lib storybook-static",
+    "storybook:clean": "rimraf storybook-static",
+    "storybook:upload": "gh-pages -d storybook-static",
     "build:storybook": "build-storybook"
   },
   "repository": {
