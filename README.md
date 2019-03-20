@@ -54,3 +54,4 @@ function Counter() {
 + [useTouch](https://snakeuni.github.io/customHook/?path=/story/hook--usetouch)
 + [useUndo](https://snakeuni.github.io/customHook/?path=/story/hook--useundo)
 + [useDimensions](https://snakeuni.github.io/customHook/?path=/story/hook--usedimensions)
++ [useOnce](https://snakeuni.github.io/customHook/?path=/story/hook--useonce)
