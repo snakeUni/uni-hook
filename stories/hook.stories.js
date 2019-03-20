@@ -77,6 +77,9 @@ import LocalStorageReadme from '../example/useLocalStorage/readme.md'
 import DimensionsDemo from '../example/useDimensions'
 import DimensionsReadme from '../example/useDimensions/readme.md'
 
+import OnceDemo from '../example/useOnce'
+import OnceReadme from '../example/useOnce/readme.md'
+
 storiesOf('Hook', module)
 .add('useCounter', withDocs(CounterReadme, () => {
   return <CounterDemo />
@@ -152,4 +155,7 @@ storiesOf('Hook', module)
 }))
 .add('useDimensions', withDocs(DimensionsReadme, () => {
   return <DimensionsDemo />
+}))
+.add('useOnce', withDocs(OnceReadme, () => {
+  return <OnceDemo />
 }))
