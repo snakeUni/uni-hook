@@ -80,6 +80,9 @@ import DimensionsReadme from '../example/useDimensions/readme.md'
 import OnceDemo from '../example/useOnce'
 import OnceReadme from '../example/useOnce/readme.md'
 
+import ImageDemo from '../example/useImage'
+import ImageReadme from '../example/useImage/readme.md'
+
 storiesOf('Hook', module)
 .add('useCounter', withDocs(CounterReadme, () => {
   return <CounterDemo />
@@ -158,4 +161,7 @@ storiesOf('Hook', module)
 }))
 .add('useOnce', withDocs(OnceReadme, () => {
   return <OnceDemo />
+}))
+.add('useImage', withDocs(ImageReadme, () => {
+  return <ImageDemo />
 }))
