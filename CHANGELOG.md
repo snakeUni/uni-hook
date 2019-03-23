@@ -1,4 +1,4 @@
-# 1.2.1 (March 23, 2019)
+# 1.2.0 (March 23, 2019)
 
 add useImage hook
 
