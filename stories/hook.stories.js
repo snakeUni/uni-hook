@@ -83,6 +83,9 @@ import OnceReadme from '../example/useOnce/readme.md'
 import ImageDemo from '../example/useImage'
 import ImageReadme from '../example/useImage/readme.md'
 
+import EventListenerDemo from '../example/useEventListener'
+import EventListenerReadme from '../example/useEventListener/readme.md'
+
 storiesOf('Hook', module)
 .add('useCounter', withDocs(CounterReadme, () => {
   return <CounterDemo />
@@ -164,4 +167,7 @@ storiesOf('Hook', module)
 }))
 .add('useImage', withDocs(ImageReadme, () => {
   return <ImageDemo />
+}))
+.add('useEventListener', withDocs(EventListenerReadme, () => {
+  return <EventListenerDemo />
 }))
