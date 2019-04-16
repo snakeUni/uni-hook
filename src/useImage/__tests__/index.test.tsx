@@ -1,5 +1,4 @@
-import { renderHook, cleanup } from 'react-hooks-testing-library'
-import useImage from '../index'
+import { cleanup } from 'react-hooks-testing-library'
 
 describe('use image test', () => {
   afterEach(cleanup)
