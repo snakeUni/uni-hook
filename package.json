@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/snakeUni/customHook.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "React",
     "Hook"
